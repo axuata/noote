@@ -1,0 +1,14 @@
+header:
+  home: 'Home'
+  changelog: 'Changelog'
+  change_lang: 'Change Language'
+
+home:
+  empty_note:
+    title: 'Enter a title here'
+    content: 'Enter some content here'
+  enter_emoji: 'Please enter an emoji.'
+  create_note: 'Create a note'
+
+changelog:
+  under_development: 'Under Development!'

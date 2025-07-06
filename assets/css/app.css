@@ -1,0 +1,7 @@
+body {
+    background-color: #f3f8fc;
+
+    * {
+        font-family: 'Inter', 'Noto Sans JP', system-ui;
+    }
+}
