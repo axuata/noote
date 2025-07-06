@@ -16,22 +16,19 @@ const initialNotes: Note[] = [
     id: uuidv4(),
     icon: '😍',
     title: 'Note 1',
-    content: `# What
-    the hell?`
+    content: `Hello World`
   },
   {
     id: uuidv4(),
     icon: '🫠',
     title: 'Note 2',
-    content: `# What
-    the hell?`
+    content: `Hello World`
   },
   {
     id: uuidv4(),
     icon: '✨',
     title: 'Note 3',
-    content: `# What
-    the hell?`
+    content: `Hello World`
   }
 ];
 const emptyNote: Note = {
@@ -90,8 +87,8 @@ function removeNote(id: string) {
   </section>
   <section class="flex flex-col gap-12px">
     <div v-for="note in notes" :key="note.id" class="bg-white shadow-sm b-(solid 1px gray-1) p-8px rounded-12px flex flex-col gap-8px">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-10px">
+      <div class="flex items-center justify-between gap-10px">
+        <div class="flex items-center gap-10px w-full">
           <div class="flex items-center justify-center bg-#f3f8fc size-33px rounded-8px shrink-0">
             <button @click="updateIcon(note.id)" class="hover:scale-105 transition-all duration-100">{{ note.icon }}</button>
           </div>

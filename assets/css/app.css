@@ -4,4 +4,8 @@ body {
     * {
         font-family: 'Inter', 'Noto Sans JP', system-ui;
     }
+
+    a {
+        @apply text-blue-6;
+    }
 }
