@@ -8,10 +8,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to :target class="flex items-center gap-4px bg-white px-8px py-2px rounded-8px hover:bg-gray-1 transition-all duration-100">
+  <NuxtLinkLocale :to :target class="flex items-center gap-4px bg-white px-8px py-2px rounded-8px hover:bg-gray-1 transition-all duration-100">
     <Icon v-if="icon" :name="icon" class="text-gray-8" />
     <p class="text-14px font-500 text-shadow-sm text-gray-7">{{ text }}</p>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
 
 <style scoped>
