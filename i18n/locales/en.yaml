@@ -9,6 +9,7 @@ home:
     content: 'Enter some content here'
   enter_emoji: 'Please enter an emoji.'
   create_note: 'Create a note'
+  no_notes: 'There are no notes.'
 
 changelog:
   under_development: 'Under Development!'

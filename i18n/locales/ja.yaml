@@ -9,6 +9,7 @@ home:
     content: 'ここに内容'
   enter_emoji: '絵文字を入力してください。'
   create_note: '作成'
+  no_notes: 'ノートが存在しません。'
 
 changelog:
   under_development: '開発中！'
