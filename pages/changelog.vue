@@ -17,7 +17,7 @@ const updates: Update[] = [
 
 <template>
   <section class="text-center py-24px">
-    <p class="text-48px font-700 text-shadow-md text-gray-8">更新履歴</p>
+    <p class="text-48px font-700 text-shadow-md text-gray-8">{{ t('changelog.title') }}</p>
   </section>
   <section class="py-18px">
     <div v-for="update in updates" :key="update.date" class="flex gap-12px text-20px">

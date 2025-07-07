@@ -12,5 +12,6 @@ home:
   no_notes: 'ノートが存在しません。'
 
 changelog:
+  title: '更新履歴'
   updates:
     20250707: '更新履歴ページを追加しました。'

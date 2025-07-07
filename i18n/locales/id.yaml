@@ -1,16 +1,16 @@
 header:
   home: 'Rumah'
   changelog: 'Perubahan Catatan'
-  change_lang: 'Ubah bahasa'
-
+  change_lang: 'Ubah Bahasa'
 home:
   empty_note:
-    title: 'Masukkan judul disini'
-    content: 'Masukkan konten disini'
+    title: 'Tuliskan judulmu disini'
+    content: 'Tuliskan kontenmu disini'
   enter_emoji: 'Masukkan emoji.'
-  create_note: 'Membuat Catatan'
+  create_note: 'Bikin catatan'
   no_notes: 'Tidak ada catatan disini.'
 
 changelog:
+  title: 'Riwayat Pembaruan'
   updates:
-    20250707: 'Perubahan catatan telah ditambahkan.'
+    20250707: 'Perubahan Catatan telah ditambahkan.'
