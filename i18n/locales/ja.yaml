@@ -12,4 +12,5 @@ home:
   no_notes: 'ノートが存在しません。'
 
 changelog:
-  under_development: '開発中！'
+  updates:
+    20250707: '更新履歴ページを追加しました。'

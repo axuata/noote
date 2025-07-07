@@ -12,4 +12,5 @@ home:
   no_notes: 'There are no notes.'
 
 changelog:
-  under_development: 'Under Development!'
+  updates:
+    20250707: 'The Changelog page was added.'

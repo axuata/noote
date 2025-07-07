@@ -26,6 +26,9 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     '~/assets/css/app.css'
   ],
+  devServer: {
+    port: 8888
+  },
   fonts: {
     defaults: {
       weights: [400, 500, 600, 700, 800],
