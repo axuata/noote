@@ -1,0 +1,16 @@
+header:
+  home: 'Rumah'
+  changelog: 'Perubahan Catatan'
+  change_lang: 'Ubah bahasa'
+
+home:
+  empty_note:
+    title: 'Masukkan judul disini'
+    content: 'Masukkan konten disini'
+  enter_emoji: 'Masukkan emoji.'
+  create_note: 'Membuat Catatan'
+  no_notes: 'Tidak ada catatan disini.'
+
+changelog:
+  updates:
+    20250707: 'Perubahan catatan telah ditambahkan.'

@@ -44,7 +44,8 @@ export default defineNuxtConfig({
     },
     locales: [
       {code: 'ja', name: '🇯🇵 日本語', file: 'ja.yaml'},
-      {code: 'en', name: '🇺🇸 English', file: 'en.yaml'}
+      {code: 'en', name: '🇺🇸 English', file: 'en.yaml'},
+      {code: 'id', name: '🇮🇩 Indonesia', file: 'id.yaml'}
     ]
   }
 });
