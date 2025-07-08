@@ -12,7 +12,7 @@ const updates: Update[] = [
     date: '2025-07-07',
     title: t('changelog.updates.20250707')
   }
-]
+];
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {useLocalStorage} from "@vueuse/core";
-import {v4 as  uuidv4} from "uuid";
+import {useLocalStorage} from '@vueuse/core';
+import {v4 as uuidv4} from 'uuid';
 
 type Note = {
   id: string,
@@ -62,7 +62,7 @@ function createNote() {
     id: uuidv4(),
     icon: '✏️',
     title: t('home.empty_note.title'),
-    content: t('home.empty_note.content'),
+    content: t('home.empty_note.content')
   }
   notes.value.push(emptyNote);
 }
