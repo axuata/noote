@@ -10,8 +10,14 @@ home:
   enter_emoji: '絵文字を入力してください。'
   create_note: '作成'
   no_notes: 'ノートが存在しません。'
+  all_notes_overwrite: 'すべてのノートは上書きされます。本当に読み込みますか？'
+  all_notes_remove: 'すべてのノートは削除されます。本当にリセットしますか？'
+  save: '保存'
+  load: '読み込み'
+  reset: 'リセット'
 
 changelog:
   title: '更新履歴'
   updates:
     20250707: '更新履歴ページを追加しました。'
+    20250709: '保存 / 読み込み・リセット機能を追加しました。'

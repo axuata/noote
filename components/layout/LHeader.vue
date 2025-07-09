@@ -8,7 +8,7 @@ const {t, locales, setLocale} = useI18n();
       <div class="bg-white size-34px rounded-9px flex items-center justify-center shadow-sm">
         <NuxtImg src="/favicon.svg" class="size-22px" />
       </div>
-      <p class="text-gray-8 font-700 text-shadow-md text-18px">Noote 🚧</p>
+      <p class="text-gray-8 font-700 text-shadow-md text-18px">Noote</p>
     </div>
     <div class="flex flex-wrap items-center gap-10px">
       <LHeaderLink :text="t('header.home')" icon="tabler:home" to="/" />

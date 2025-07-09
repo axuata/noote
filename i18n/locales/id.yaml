@@ -2,6 +2,7 @@ header:
   home: 'Rumah'
   changelog: 'Perubahan Catatan'
   change_lang: 'Ubah Bahasa'
+
 home:
   empty_note:
     title: 'Tuliskan judulmu disini'
@@ -9,8 +10,14 @@ home:
   enter_emoji: 'Masukkan emoji.'
   create_note: 'Bikin catatan'
   no_notes: 'Tidak ada catatan disini.'
+  all_notes_overwrite: 'Semua catatan akan ditimpa. Apakah Anda yakin?'
+  all_notes_remove: 'Semua catatan akan dihapus. Apakah Anda yakin?'
+  save: 'Simpan'
+  load: 'Muat'
+  reset: 'Atur Ulang'
 
 changelog:
   title: 'Riwayat Pembaruan'
   updates:
     20250707: 'Perubahan Catatan telah ditambahkan.'
+    20250709: 'Fitur simpan, muat, dan atur ulang telah ditambahkan.'

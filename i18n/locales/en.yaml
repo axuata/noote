@@ -10,8 +10,14 @@ home:
   enter_emoji: 'Please enter an emoji.'
   create_note: 'Create a note'
   no_notes: 'There are no notes.'
+  all_notes_overwrite: 'All notes will be overwritten. Are you sure?'
+  all_notes_remove: 'All notes will be removed. Are you sure?'
+  save: 'Save'
+  load: 'Load'
+  reset: 'Reset'
 
 changelog:
   title: 'Changelog'
   updates:
-    20250707: 'The Changelog page was added.'
+    20250707: 'Added the changelog page.'
+    20250709: 'Added save, load, and reset features.'
