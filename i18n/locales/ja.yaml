@@ -1,7 +1,7 @@
 header:
   home: 'ホーム'
   changelog: '更新履歴'
-  change_lang: '言語の変更'
+  change_lang: '言語'
 
 home:
   empty_note:

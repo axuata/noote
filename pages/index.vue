@@ -184,9 +184,16 @@ function resetNotes() {
     </div>
   </section>
 
-  <section v-else class="w-780px h-159px bg-#e0e8f0 animate-pulse flex items-center justify-center rounded-18px">
+  <section v-else class="w-full h-159px bg-#e0e8f0 animate-pulse flex items-center justify-center rounded-18px">
     <p class="font-600 text-gray-8 text-18px">{{ t('home.no_notes') }}</p>
   </section>
+
+
+  <div class="hidden">
+    <div class="w-full h-159px bg-#e0e8f0 animate-pulse flex items-center justify-center rounded-18px">
+      <p>a</p>
+    </div>
+  </div>
 </template>
 
 <style scoped>

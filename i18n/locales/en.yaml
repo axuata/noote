@@ -1,7 +1,7 @@
 header:
   home: 'Home'
   changelog: 'Changelog'
-  change_lang: 'Change Language'
+  change_lang: 'Language'
 
 home:
   empty_note:

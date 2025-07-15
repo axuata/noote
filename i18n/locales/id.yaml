@@ -1,7 +1,7 @@
 header:
-  home: 'Rumah'
-  changelog: 'Perubahan Catatan'
-  change_lang: 'Ubah Bahasa'
+  home: 'Home'
+  changelog: 'Changelog'
+  change_lang: 'Bahasa'
 
 home:
   empty_note:
@@ -14,7 +14,7 @@ home:
   all_notes_remove: 'Semua catatan akan dihapus. Apakah Anda yakin?'
   save: 'Simpan'
   load: 'Muat'
-  reset: 'Atur Ulang'
+  reset: 'Reset'
 
 changelog:
   title: 'Riwayat Pembaruan'
