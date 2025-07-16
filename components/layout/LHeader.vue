@@ -15,7 +15,7 @@ const {t, locales, setLocale} = useI18n();
       <LHeaderLink :text="t('header.changelog')" icon="tabler:script" to="/changelog/" />
       <LHeaderDropdown :text="t('header.change_lang')" icon="tabler:world">
         <div class="flex flex-col gap-5px">
-          <button v-for="locale in locales" :key="locale.code" @click="setLocale(locale.code)" class="px-8px py-4px hover:bg-gray-1 rounded-8px text-14px font-500 text-shadow-sm text-gray-8">
+          <button v-for="locale in locales" :key="locale.code" @click="setLocale(locale.code)" class="px-8px py-4px hover:bg-gray-1 rounded-8px text-14px font-500 text-shadow-sm text-gray-8 whitespace-nowrap">
             {{ locale.name }}
           </button>
         </div>

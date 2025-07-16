@@ -15,7 +15,7 @@ const isOpen = ref<boolean>(false);
       <Icon v-if="!isOpen" name="tabler:caret-down-filled" class="text-gray-7 text-15px" />
     </div>
     <div v-if="isOpen" class="absolute flex w-full justify-center mt-5px">
-      <div class="bg-white z-999 p-8px rounded-10px ">
+      <div class="bg-white z-999 p-8px rounded-10px shadow-md">
         <slot />
       </div>
     </div>

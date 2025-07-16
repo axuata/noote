@@ -126,6 +126,10 @@ function resetNotes() {
     return;
   }
 }
+
+function copyNote(text: string) {
+  navigator.clipboard.writeText(text);
+}
 </script>
 
 <template>
@@ -174,6 +178,9 @@ function resetNotes() {
           </button>
           <button @click="moveNote(note.id, 'down')" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
             <Icon name="tabler:caret-down-filled" />
+          </button>
+          <button @click="copyNote(note.content)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+            <Icon name="tabler:copy" />
           </button>
           <button @click="removeNote(note.id)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
             <Icon name="tabler:trash" />
