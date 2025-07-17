@@ -91,9 +91,10 @@ function exportNotes() {
     type: 'application/json'
   });
   const downloadLinkElement: HTMLAnchorElement = document.createElement('a') as HTMLAnchorElement;
+  const date = new Date();
   downloadLinkElement.href = URL.createObjectURL(json);
   downloadLinkElement.target = '_blank';
-  downloadLinkElement.download = 'notes';
+  downloadLinkElement.download = `notes_${date.toISOString()}`;
   downloadLinkElement.click();
 }
 
