@@ -29,10 +29,10 @@ const updates: Update[] = [
   <section class="text-center py-24px">
     <p class="text-48px font-700 text-shadow-md text-gray-8">{{ t('changelog.title') }}</p>
   </section>
-  <section class="py-18px flex flex-col gap-10px max-md:gap-24px">
+  <section class="py-18px flex flex-col gap-14px max-md:gap-24px">
     <div v-for="update in updates" :key="update.date" class="flex items-center gap-12px text-20px max-md:block">
       <p>{{ update.emoji }}</p>
-      <p class="font-600 text-shadow-md text-gray-7">{{ update.date }}</p>
+      <p class="font-600 text-shadow-md text-gray-7 w-120px">{{ update.date }}</p>
       <p class="font-600 text-shadow-md text-gray-8">{{ update.title }}</p>
     </div>
   </section>
