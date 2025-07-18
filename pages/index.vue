@@ -48,7 +48,7 @@ function updateTime() {
   time.value = `${hours}:${minutes}:${seconds}`;
 }
 
-function updateIcon(id: string) {
+function updateEmoji(id: string) {
   let targetNote = notes.value.find(item => item.id === id);
   if (targetNote && targetNote.icon) {
     const userInput = prompt(t('home.enter_emoji'));
@@ -186,7 +186,7 @@ function copyNote(text: string) {
       <div class="flex items-center justify-between gap-10px">
         <div class="flex items-center gap-10px w-full">
           <div class="flex items-center justify-center bg-#f3f8fc size-33px rounded-8px shrink-0">
-            <button @click="updateIcon(note.id)" class="hover:scale-105 transition-all duration-100">{{ note.icon }}</button>
+            <button @click="updateEmoji(note.id)" class="hover:scale-105 transition-all duration-100">{{ note.icon }}</button>
           </div>
           <input v-model="note.title" type="text" class="text-22px font-600 text-shadow-md text-gray-8 w-full">
         </div>
