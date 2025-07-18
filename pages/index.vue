@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {useFileDialog, useLocalStorage} from '@vueuse/core';
+import {consola} from 'consola';
 import {v4 as uuidv4} from 'uuid';
 
 type Note = {
@@ -55,6 +56,8 @@ function updateIcon(id: string) {
       targetNote.icon = userInput;
     }
   }
+
+  consola.info(`The note icon has been updated: ${id}`);
 }
 
 function createNote() {
@@ -65,10 +68,14 @@ function createNote() {
     content: t('home.empty_note.content')
   }
   notes.value.push(emptyNote);
+
+  consola.info('New note has been created.');
 }
 
 function removeNote(id: string) {
   notes.value = notes.value.filter(note => note.id !== id);
+
+  consola.info(`The note has been removed: ${id}`);
 }
 
 function moveNote(id: string, type: 'up' | 'down') {
@@ -84,6 +91,8 @@ function moveNote(id: string, type: 'up' | 'down') {
       notes.value.splice(index + 1, 0, note);
     }
   }
+
+  consola.info(`The note has been moved: ${id}, type: ${type}`);
 }
 
 function exportNotes() {
@@ -117,6 +126,10 @@ function loadNotes() {
     } else {
       return;
     }
+
+    files[0].text().then((rawText) => {
+      consola.info(`The note data has been loaded: ${rawText}`);
+    });
   });
 }
 
@@ -126,10 +139,14 @@ function resetNotes() {
   } else {
     return;
   }
+
+  consola.info('The notes has been reset.');
 }
 
 function copyNote(text: string) {
   navigator.clipboard.writeText(text);
+
+  consola.info(`Copied: ${text}`);
 }
 </script>
 
