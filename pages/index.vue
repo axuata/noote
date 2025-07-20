@@ -106,6 +106,7 @@ function exportNotes() {
   downloadLinkElement.target = '_blank';
   downloadLinkElement.download = `notes_${safeFilename}.json`;
   downloadLinkElement.click();
+  consola.info(`Notes has been exported as "notes_${safeFilename}.json"`);
 }
 
 function loadNotes() {
