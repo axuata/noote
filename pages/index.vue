@@ -101,9 +101,10 @@ function exportNotes() {
   });
   const downloadLinkElement: HTMLAnchorElement = document.createElement('a') as HTMLAnchorElement;
   const date = new Date();
+  const safeFilename = date.toISOString().replace(/:/g, '').replace(/\./g, '').replace(/-/g, '');
   downloadLinkElement.href = URL.createObjectURL(json);
   downloadLinkElement.target = '_blank';
-  downloadLinkElement.download = `notes_${date.toISOString()}`;
+  downloadLinkElement.download = `notes_${safeFilename}.json`;
   downloadLinkElement.click();
 }
 
