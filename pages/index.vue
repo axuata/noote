@@ -162,21 +162,21 @@ function copyNote(text: string) {
 
   <section class="py-8px flex items-center justify-between gap-6px">
     <div class="flex items-center gap-6px">
-      <button @click="createNote()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:scale-105 transition-all duration-100">
+      <button @click="createNote()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:bg-gray-1 transition-all duration-100">
         <Icon name="tabler:plus" />
         {{ t('home.create_note') }}
       </button>
-      <button @click="exportNotes()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:scale-105 transition-all duration-100">
+      <button @click="exportNotes()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:bg-gray-1 transition-all duration-100">
         <Icon name="tabler:download" />
         {{ t('home.save') }}
       </button>
-      <button @click="loadNotes()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:scale-105 transition-all duration-100">
+      <button @click="loadNotes()" class="flex items-center justify-center h-27px gap-3px bg-white px-8px rounded-8px shadow-sm text-15px font-500 text-gray-8 hover:bg-gray-1 transition-all duration-100">
         <Icon name="tabler:upload" />
         {{ t('home.load') }}
       </button>
     </div>
     <div class="flex items-center gap-6px">
-      <button @click="resetNotes()" class="flex items-center justify-center h-27px gap-3px bg-red-5 px-8px rounded-8px shadow-sm text-15px font-500 text-white hover:scale-105 transition-all duration-100">
+      <button @click="resetNotes()" class="flex items-center justify-center h-27px gap-3px bg-red-5 px-8px rounded-8px shadow-sm text-15px font-500 text-white hover:bg-red-6 transition-all duration-100">
         <Icon name="tabler:trash" />
         {{ t('home.reset') }}
       </button>
