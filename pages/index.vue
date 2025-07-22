@@ -184,7 +184,7 @@ function copyNote(text: string) {
   </section>
 
   <section v-if="notes.length > 0" class="flex flex-col gap-12px">
-    <div v-for="note in notes" :key="note.id" class="bg-white shadow-sm b-(solid 1px gray-1) p-8px rounded-12px flex flex-col gap-8px hover:b-(solid 1px gray-2) transition-all duration-100">
+    <div v-for="note in notes" :key="note.id" class="bg-white shadow-sm b-(solid 1px slate-1) p-8px rounded-12px flex flex-col gap-8px hover:b-(solid 1px slate-2) transition-all duration-100">
       <div class="flex items-center justify-between gap-10px">
         <div class="flex items-center gap-10px w-full">
           <div class="flex items-center justify-center bg-#f3f8fc size-33px rounded-8px shrink-0">
@@ -210,7 +210,6 @@ function copyNote(text: string) {
       <textarea v-model="note.content" class="text-16px bg-#f3f8fc px-8px py-4px rounded-6px resize-none h-100px">{{ note.content }}</textarea>
     </div>
   </section>
-
   <section v-if="!(notes.length > 0)" class="w-full h-159px bg-#e0e8f0 animate-pulse flex items-center justify-center rounded-18px">
     <p class="font-600 text-gray-8 text-18px">{{ t('home.no_notes') }}</p>
   </section>

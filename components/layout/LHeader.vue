@@ -12,7 +12,6 @@ const {t, locales, setLocale} = useI18n();
     </div>
     <div class="flex flex-wrap items-center gap-10px">
       <LHeaderLink :text="t('header.home')" icon="tabler:home" to="/" />
-      <LHeaderLink :text="t('header.changelog')" icon="tabler:script" to="/changelog/" />
       <LHeaderDropdown :text="t('header.change_lang')" icon="tabler:world">
         <div class="flex flex-col gap-5px">
           <button v-for="locale in locales" :key="locale.code" @click="setLocale(locale.code)" class="px-8px py-4px hover:bg-gray-1 rounded-8px text-14px font-500 text-shadow-sm text-gray-8 whitespace-nowrap">
