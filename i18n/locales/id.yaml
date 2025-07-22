@@ -15,10 +15,3 @@ home:
   save: 'Simpan'
   load: 'Muat'
   reset: 'Reset'
-
-changelog:
-  title: 'Riwayat Pembaruan'
-  updates:
-    20250716: 'Fungsi salin ditambahkan.'
-    20250709: 'Fitur simpan, muat, dan atur ulang telah ditambahkan.'
-    20250707: 'Perubahan Catatan telah ditambahkan.'

@@ -1,0 +1,17 @@
+header:
+  home: 'Accueil'
+  changelog: 'Journal des modifications'
+  change_lang: 'Langue'
+
+home:
+  empty_note:
+    title: 'Entrez un titre ici'
+    content: 'Entrez du contenu ici'
+  enter_emoji: 'Veuillez entrer un emoji.'
+  create_note: 'Créer une note'
+  no_notes: 'Il n’y a aucune note.'
+  all_notes_overwrite: 'Toutes les notes seront écrasées. Êtes-vous sûr ?'
+  all_notes_remove: 'Toutes les notes seront supprimées. Êtes-vous sûr ?'
+  save: 'Enregistrer'
+  load: 'Charger'
+  reset: 'Réinitialiser'

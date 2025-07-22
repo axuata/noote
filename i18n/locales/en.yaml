@@ -15,10 +15,3 @@ home:
   save: 'Save'
   load: 'Load'
   reset: 'Reset'
-
-changelog:
-  title: 'Changelog'
-  updates:
-    20250716: 'Added a copy button.'
-    20250709: 'Added save, load, and reset buttons.'
-    20250707: 'Added the changelog page.'

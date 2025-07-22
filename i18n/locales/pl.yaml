@@ -1,0 +1,17 @@
+header:
+  home: 'Strona główna'
+  changelog: 'Dziennik zmian'
+  change_lang: 'Język'
+
+home:
+  empty_note:
+    title: 'Wpisz tutaj tytuł'
+    content: 'Wpisz tutaj treść'
+  enter_emoji: 'Proszę wprowadź emotkę.'
+  create_note: 'Utwórz notatkę'
+  no_notes: 'Brak notatek.'
+  all_notes_overwrite: 'Wszystkie notatki zostaną nadpisane. Czy na pewno?'
+  all_notes_remove: 'Wszystkie notatki zostaną usunięte. Czy na pewno?'
+  save: 'Zapisz'
+  load: 'Wczytaj'
+  reset: 'Resetuj'

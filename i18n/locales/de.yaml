@@ -1,0 +1,17 @@
+header:
+  home: 'Startseite'
+  changelog: 'Änderungsprotokoll'
+  change_lang: 'Sprache'
+
+home:
+  empty_note:
+    title: 'Gib hier einen Titel ein'
+    content: 'Gib hier etwas Inhalt ein'
+  enter_emoji: 'Bitte ein Emoji eingeben.'
+  create_note: 'Notiz erstellen'
+  no_notes: 'Es gibt keine Notizen.'
+  all_notes_overwrite: 'Alle Notizen werden überschrieben. Bist du sicher?'
+  all_notes_remove: 'Alle Notizen werden gelöscht. Bist du sicher?'
+  save: 'Speichern'
+  load: 'Laden'
+  reset: 'Zurücksetzen'
