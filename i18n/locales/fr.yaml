@@ -15,3 +15,9 @@ home:
   save: 'Enregistrer'
   load: 'Charger'
   reset: 'Réinitialiser'
+  actions:
+    move_up: 'Déplacer vers le haut'
+    move_down: 'Déplacer vers le bas'
+    copy_note_content: 'Copier le contenu de la note'
+    duplicate_note: 'Dupliquer la note'
+    remove_note: 'Supprimer la note'

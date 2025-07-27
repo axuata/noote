@@ -15,3 +15,9 @@ home:
   save: 'Zapisz'
   load: 'Wczytaj'
   reset: 'Resetuj'
+  actions:
+    move_up: 'Przesuń w górę'
+    move_down: 'Przesuń w dół'
+    copy_note_content: 'Skopiuj treść notatki'
+    duplicate_note: 'Duplikuj notatkę'
+    remove_note: 'Usuń notatkę'

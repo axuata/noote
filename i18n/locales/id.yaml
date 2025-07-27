@@ -15,3 +15,9 @@ home:
   save: 'Simpan'
   load: 'Muat'
   reset: 'Reset'
+  actions:
+    move_up: 'Pindahkan ke atas'
+    move_down: 'Pindahkan ke bawah'
+    copy_note_content: 'Salin isi catatan'
+    duplicate_note: 'Duplikat catatan'
+    remove_note: 'Hapus catatan'

@@ -15,3 +15,9 @@ home:
   save: '保存'
   load: '読み込み'
   reset: 'リセット'
+  actions:
+    move_up: '上に移動する'
+    move_down: '下に移動する'
+    copy_note_content: '内容をコピーする'
+    duplicate_note: 'ノートを複製する'
+    remove_note: 'ノートを削除する'

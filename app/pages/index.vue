@@ -206,21 +206,31 @@ function duplicateNote(note: Note) {
           <input v-model="note.title" type="text" class="text-22px font-600 text-shadow-md text-gray-8 w-full">
         </div>
         <div class="flex items-center gap-6px">
-          <button @click="moveNote(note.id, 'up')" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
-            <Icon name="tabler:caret-up-filled" />
-          </button>
-          <button @click="moveNote(note.id, 'down')" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
-            <Icon name="tabler:caret-down-filled" />
-          </button>
-          <button @click="copyNote(note.content)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
-            <Icon name="tabler:clipboard-list" />
-          </button>
-          <button @click="duplicateNote(note)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
-            <Icon name="tabler:copy" />
-          </button>
-          <button @click="removeNote(note.id)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
-            <Icon name="tabler:trash" />
-          </button>
+          <CTooltip :text="t('home.actions.move_up')">
+            <button @click="moveNote(note.id, 'up')" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+              <Icon name="tabler:caret-up-filled" />
+            </button>
+          </CTooltip>
+          <CTooltip :text="t('home.actions.move_down')">
+            <button @click="moveNote(note.id, 'down')" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+              <Icon name="tabler:caret-down-filled" />
+            </button>
+          </CTooltip>
+          <CTooltip :text="t('home.actions.copy_note_content')">
+            <button @click="copyNote(note.content)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+              <Icon name="tabler:clipboard-list" />
+            </button>
+          </CTooltip>
+          <CTooltip :text="t('home.actions.duplicate_note')">
+            <button @click="duplicateNote(note)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+              <Icon name="tabler:copy" />
+            </button>
+          </CTooltip>
+          <CTooltip :text="t('home.actions.remove_note')">
+            <button @click="removeNote(note.id)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+              <Icon name="tabler:trash" />
+            </button>
+          </CTooltip>
         </div>
       </div>
       <textarea v-model="note.content" class="text-16px bg-#f3f8fc px-8px py-4px rounded-6px resize-none h-100px">{{ note.content }}</textarea>

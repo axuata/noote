@@ -15,3 +15,10 @@ home:
   save: 'Save'
   load: 'Load'
   reset: 'Reset'
+  actions:
+    move_up: 'Move up'
+    move_down: 'Move down'
+    copy_note_content: 'Copy note content'
+    duplicate_note: 'Duplicate note'
+    remove_note: 'Delete note'
+
