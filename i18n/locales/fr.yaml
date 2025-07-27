@@ -1,6 +1,4 @@
 header:
-  home: 'Accueil'
-  changelog: 'Journal des modifications'
   change_lang: 'Langue'
 
 home:
