@@ -122,16 +122,20 @@ function loadNotes() {
 
     if (confirm(t('home.all_notes_overwrite'))) {
       const file = files[0];
-      file.text().then((rawText) => {
-        notes.value = JSON.parse(rawText);
-      });
+      if (file) {
+        file.text().then((rawText) => {
+          notes.value = JSON.parse(rawText);
+        });
+      }
     } else {
       return;
     }
 
-    files[0].text().then((rawText) => {
-      consola.info(`The note data has been loaded: ${rawText}`);
-    });
+    if (files.length > 0) {
+      files[0].text().then((rawText) => {
+        consola.info(`The note data has been loaded: ${rawText}`);
+      });
+    }
   });
 }
 
@@ -149,6 +153,15 @@ function copyNote(text: string) {
   navigator.clipboard.writeText(text);
 
   consola.info(`Copied: ${text}`);
+}
+
+function duplicateNote(note: Note) {
+  notes.value.push({
+    id: uuidv4(),
+    icon: note.icon,
+    title: note.title,
+    content: note.content
+  });
 }
 </script>
 
@@ -200,6 +213,9 @@ function copyNote(text: string) {
             <Icon name="tabler:caret-down-filled" />
           </button>
           <button @click="copyNote(note.content)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
+            <Icon name="tabler:clipboard-list" />
+          </button>
+          <button @click="duplicateNote(note)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
             <Icon name="tabler:copy" />
           </button>
           <button @click="removeNote(note.id)" class="bg-white b-(solid 1px gray-2) shadow-sm flex items-center justify-center size-26px rounded-6px transition-all duration-100 hover:b-(solid 1px gray-3)">
