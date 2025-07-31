@@ -48,7 +48,8 @@ export default defineNuxtConfig({
       {code: 'id', name: '🇮🇩 Indonesia', file: 'id.yaml'},
       {code: 'de', name: '🇩🇪 Deutsch', file: 'de.yaml'},
       {code: 'pl', name: '🇵🇱 Polski', file: 'pl.yaml'},
-      {code: 'fr', name: '🇫🇷 Français', file: 'fr.yaml'}
+      {code: 'fr', name: '🇫🇷 Français', file: 'fr.yaml'},
+      {code: 'ko', name: '🇰🇷 한국어', file: 'ko.yaml'}
     ]
   }
 });

@@ -1,0 +1,21 @@
+header:
+  change_lang: '언어'
+
+home:
+  empty_note:
+    title: '제목을 입력해주세요.'
+    content: '메모할 내용을 입력해주세요.'
+  enter_emoji: '이모티콘을 입력해주세요.'
+  create_note: '노트 추가하기'
+  no_notes: '추가 된 노트가 없네요. 버튼을 눌러 노트를 추가해보세요.'
+  all_notes_overwrite: '모든 노트 내용을 덮어씁니다. 진행할까요?'
+  all_notes_remove: '모든 노트를 지웁니다. 진행할까요?'
+  save: '저장'
+  load: '불러오기'
+  reset: '초기화'
+  actions:
+    move_up: '위로 이동'
+    move_down: '아래로 이동'
+    copy_note_content: '내용 복사하기'
+    duplicate_note: '똑같은 노트 복사하기'
+    remove_note: '지우기'
